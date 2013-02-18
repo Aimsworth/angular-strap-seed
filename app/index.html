@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8"/>
+  <title>Eskollz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+        href="ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+        href="ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72"
+        href="ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed"
+        href="ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon"
+        href="ico/favicon.png">
+
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css"/>
+  <link rel="stylesheet" href="css/bootstrap-timepicker.css"/>
+  <link rel="stylesheet" href="css/app.css"/>
+
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="#">Project</a>
+        <div class="nav-collapse collapse">
+          <p class="navbar-text pull-right">
+            <a href="#/login" class="navbar-link">Identification</a>
+          </p>
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <ul class="menu">
+    <li><a href="#/view1">view1</a></li>
+    <li><a href="#/view2">view2</a></li>
+  </ul>
+
+  <div ng-view></div>
+
+  <div>Angular seed app: v<span app-version></span></div>
+
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="lib/bootstrap/bootstrap.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/bootstrap-timepicker.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angularstrap/angular-strap.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
